@@ -4,17 +4,19 @@ import Logos from './Logos'
 
 const SecondSection = () => {
     return (
-        <section id='second-section'>
+        <section id='second-section' className='d-flex gap-5 py-5 justify-content-between flex-column align-items-center'>
             <Logos />
-            <div className='row'>
-                <div className='col h-100 w-100'>
+            <hr />
+            {/* about & Experience */}
+            <div className='d-flex w-100 align-items-center mt-4 justify-content-evenly'>
+                <div className=''>
                     <img 
                         src="/second_section/pic.png"
                         alt="image1"
                         className='pic'
                     />
                 </div>
-                <div className='col h-100 w-100'>
+                <div className='d-flex align-items-start flex-column'>
                     <span>about</span>
                     <h2>An Experience </h2>
                     <h2>Design Agency</h2>
@@ -26,6 +28,27 @@ const SecondSection = () => {
                         ABOUT US
                     </button>
                 </div>
+            </div>
+
+            {/* agency & projects */}
+            <div className='row record'>
+                <div className="">
+                    <h3>42%</h3>
+                    <span className='text'>Years of experience</span>
+                </div>
+                <div className="">
+                    <h3>73+</h3>
+                    <span className='text'>Agency members</span>
+                </div>
+                <div className="">
+                    <h3>5000</h3>
+                    <span className='text'>Projects complete</span>
+                </div>
+            </div>
+
+            <div className='row'>
+                <div></div>
+                <div></div>
             </div>
         </section>
     )
