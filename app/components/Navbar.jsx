@@ -3,8 +3,8 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <header className="py-3 w-100 position-fixed z-2 top-0">
-            <nav className="container-fluid w-100 d-flex justify-content-around align-items-center">
+        <header className="py-3 position-fixed z-2 top-0">
+            <nav className="container-fluid d-flex justify-content-around align-items-center">
                 {/* Logo */}
                 <div>
                     <img 
