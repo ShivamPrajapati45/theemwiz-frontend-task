@@ -31,6 +31,7 @@ span{
     color: #EF6D58;
     text-transform: uppercase;
 }
+
 p{
     font-weight: 400;
     font-size: 16px;
@@ -40,6 +41,7 @@ p{
     width: 470px;
     height: 98px;
 }
+
 h5{
     font-weight: 400;
     font-size: 20px;
@@ -100,3 +102,105 @@ button{
     height: 176px;
     width: 391px;
 }
+
+.work-box .child-work-box1 h5{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+.work-box .child-work-box1 h3{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #391400;
+    text-transform: none;
+}
+
+.work-box .child-work-box1 #text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #391400A3;
+    text-transform: none;
+}
+
+.work-box .child-work-box1 #read-more{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #391400;
+    text-transform: none;
+}
+
+.child-work-box2 div h1{
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: #391400;
+}
+
+.child-work-box2 div h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #391400;
+}
+
+.video-box div h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+.video-box div h3{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400;
+}
+.video-box div p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400A3;
+}
+
+.video-box .play-btn{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.video-box .video-time{
+    bottom: 20px;
+    left: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+    padding: 0px 2px;
+}
+
+
+
+
+
+

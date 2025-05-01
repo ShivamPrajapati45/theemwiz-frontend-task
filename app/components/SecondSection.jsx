@@ -46,9 +46,52 @@ const SecondSection = () => {
                 </div>
             </div>
 
-            <div className='row'>
-                <div></div>
-                <div></div>
+            {/* how we work */}
+            <div className='d-flex w-100 py-5 mt-3 work-box align-items-center justify-content-around'>
+                <div className='child-work-box1'>
+                    <h5>How we work</h5>
+                    <h3>Making Your Projects</h3>
+                    <h3>Look Awesome</h3>
+                    <p id='text'>Technical skills, design, business understanding, ability to put themselves in the merchant's shoes.</p>
+                    <p id='read-more'>Read More</p>
+                </div>
+                <div className='child-work-box2 d-flex gap-5'>
+                    <div className='d-flex flex-column gap-3'>
+                        <h1>1</h1>
+                        <h1>2</h1>
+                        <h1>3</h1>
+                    </div>
+                    <div className='d-flex flex-column justify-content-around align-items-start'>
+                        <h4>Full service range including</h4>
+                        <h4>Technical skills, design, business</h4>
+                        <h4>Themselves in the merchant's</h4>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            {/* video */}
+            <div className='video-box py-5 d-flex align-items-center justify-content-evenly w-100'>
+                <div className='position-relative'>
+                    <img 
+                        src="/second_section/Bitmap (5).png" 
+                        alt="video_bg"
+                        className='z-0'
+                    />
+                    <img 
+                        src="/second_section/play.png" 
+                        alt="play_button"
+                        className='position-absolute play-btn' 
+                    />
+                    <span className='position-absolute video-time'>1:45</span>
+                </div>
+                <div>
+                    <h5>Video Reel</h5>
+                    <h3>Unlock The Greatest </h3>
+                    <h3>Value Possible</h3>
+                    <p>
+                        Design, business understanding, ability to put themselves in the merchant's shoes meant to partner.
+                    </p>
+                </div>
             </div>
         </section>
     )
