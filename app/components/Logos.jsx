@@ -29,8 +29,8 @@ const Logos = () => {
 
     return (
         <div className='logos'>
-            {logos.map((logo) => (
-                <img src={logo.src} alt={logo.alt} />
+            {logos.map((logo,index) => (
+                <img key={index} src={logo.src} alt={logo.alt} />
             ))}
         </div>
     )

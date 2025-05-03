@@ -1,0 +1,232 @@
+.third-section {
+    width: 100%;
+    background-color: #28293E;
+    box-sizing: border-box;
+}
+
+.third-section-content {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    color: #391400;
+    padding: 80px 0px;
+}
+
+.third-section-content h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+    text-align: center;
+}
+
+.third-section-content h2{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-transform: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.category{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #FFFFFFA3;
+    text-transform: none;
+}
+
+.active-category{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+.third-section-content .category sup{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFFA3;
+}
+
+.third-section-content button{
+    width: 170px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid gray;
+    
+}
+
+.text-content{
+    left: 25px;
+    bottom: 15px;
+    gap: 10px;
+}
+
+.text-content span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: black;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-transform: none;
+}
+
+.text-content h3{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    color: white;
+}
+
+/* .contact */
+
+.contact{
+    background-color: #FDF0E9;
+    border-radius: 10px;
+    width: 1170px;
+    height: 336px;
+    min-width: 1170px;
+}
+
+.contact .contact-div1 h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+.contact .contact-div1 h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400;
+    width: 248px;
+}
+
+.contact .contact-div1 button{
+    outline: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #EF6D58;
+}
+
+.contact-div1 .star-icon{
+    transform: translate(-10%,-105%);
+}
+.contact-div3 .girl_img{
+    transform: translate(-95%, -27%);
+    z-index: 1;
+}
+
+.developer{
+    gap: 29rem;
+}
+
+.developer h2{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-transform: none;
+    color: #FFFFFF;
+}
+
+.developer h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+
+.developer .btn{
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px #FFFFFF4B solid;
+}
+
+.profile_box{
+    height: 272px;
+    width: 270px;
+    overflow: hidden;
+    object-fit: contain;
+    border: 1px solid #3A3C56;
+    border-radius: 5px;
+}
+
+.profile h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.profile span{
+    color: #FFFFFFA3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border: 1px solid #4E4F6E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active-dot {
+    background-color: #ff6533;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .third-section {
+        padding: 40px 16px;
+    }
+
+    .third-section-content h2 {
+        font-size: 24px;
+    }
+
+    .third-section-content p {
+        font-size: 16px;
+    }
+}

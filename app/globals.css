@@ -1,5 +1,4 @@
 
-/* Reset some default browser styles */
 *,
 *::before,
 *::after {
@@ -11,8 +10,3 @@
 .scrollbar::-webkit-scrollbar{
   display: none;
 }
-/* .scrollbar-thin-custom::-webkit-scrollbar-thumb {
-  background-color: #999;
-  border-radius: 20px;
-} */
-
