@@ -2,10 +2,10 @@ import React from 'react'
 
 const Pricing = () => {
     return (
-        <div className='container'>
-            <div className='row '>
+        <div className='container my-5 px-5'>
+            <div className='row justify-content-center'>
 
-                <div className="col-4 p-5 d-flex flex-column align-self-start price">
+                <div className="col-md-4 gap-3 p-5 d-flex flex-column price">
                     <h5>Consultation</h5>
                     <h3>Free</h3>
                     <span className='span-text'>
@@ -47,13 +47,14 @@ const Pricing = () => {
                     </button>
                 </div>
 
-                <div className="col-4 popular-price price bg-white">
-                    <span className='popular text-center'>Popular</span>
+                <div className="col-md-3 gap-3 position-relative d-flex flex-column popular-price bg-white">
+                    <div className='popular-btn'>
+                        <span className='popular mt-4 text-center'>Popular</span>
+                    </div>
                     <h5>design</h5>
                     <h3>$1500</h3>
                     <span className='span-text'>
-                        Your digital marketing efforts, 
-                        instead of handling in-house.
+                        Provide your business with a variety of digital solutions to promote.
                     </span>
                     <div className='d-flex align-items-center gap-4'>
                         <div className='d-flex flex-column gap-4 align-items-center'>
@@ -85,17 +86,16 @@ const Pricing = () => {
                             <span className='span-text'>Production</span>
                         </div>
                     </div>
-                    <button className='first-contact'>
+                    <button className='first-contact bg-danger'>
                         contact us
                     </button>
                 </div>
 
-                <div className="col-4 p-5 d-flex flex-column align-self-start price">
+                <div className="col-md-4 gap-3 p-5 d-flex flex-column align-self-start price">
                     <h5>Design+Code</h5>
                     <h3>$2900</h3>
                     <span className='span-text'>
-                        Your digital marketing efforts, 
-                        instead of handling in-house.
+                        490-=Help you hit your marketing goals and grow your business.
                     </span>
                     <div className='d-flex align-items-center gap-4'>
                         <div className='d-flex flex-column gap-4 align-items-center'>
