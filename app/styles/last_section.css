@@ -2,6 +2,10 @@
     background-color: #FDF0E9;
 }
 
+.first-div{
+    padding: 0rem 5rem;
+}
+
 .first-div h5{
     font-weight: 400;
     font-size: 16px;
@@ -18,7 +22,6 @@
     letter-spacing: -1px;
     color: #391400;
 }
-
 
 
 /* map part */
@@ -102,21 +105,29 @@ option{
 }
 
 /* pricing */
+.pricing-section{
+    padding: 5rem 6rem;
+}
 
 .price{
     border: 1px solid #F3D1BF;
-    border-radius: 8px;
     background-color: #FFEFE7;
     min-height: 100%;
-    /* text-align: center; */
 }
+
+.price-first{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.price-third{
+    border-radius: 0px 8px 8px 0px;
+}
+
 
 .popular-price{
     border-top: none;
     border-bottom: 1px solid #F3D1BF;
 }
-
-
 
 .popular-price h5,
 .price h5{
@@ -148,7 +159,10 @@ h3{
     top: -30px;
     left: 0px;
     border-top: 1px solid #F3D1BF;
-    padding: 0px 12px;
+    border-radius: 8px 8px 0px 0px;
+    border-right: 1px solid #F3D1BF;
+    border-left: 1px solid #F3D1BF;
+    padding: 0px 40px;
 }
 
 .popular{
@@ -209,15 +223,155 @@ h3{
     background-color: white;
     color: #391400;
     border-radius: 5px;
+    margin-top: 20px;
     box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
 }
-.first-contact{
+.first-contact-popular{
     font-weight: 900;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    background-color: white;
-    color: #391400;
+    background-color: #EF6D58;
+    color: #ffffff;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
 }
+
+/* faq */
+.faq-div h1{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+}
+.faq-div h3{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400;
+}
+.faq-div .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400A3;
+}
+.faq-div a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #391400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.faq-div a:hover{
+    text-decoration: underline;
+}
+
+.faq-card {
+  background: #FDF6F3;
+  border: 1px solid #F7CFC1;
+  border-radius: 16px;
+  box-shadow: none;
+  padding: 32px 0 0 0;
+  margin: 0 auto 40px auto;
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.faq-div {
+  padding: 0 32px;
+  margin-bottom: 0;
+}
+.faq-accordion {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  background: none;
+  border-radius: 0 0 16px 16px;
+  box-shadow: none;
+}
+
+.faq-accordion-item {
+  background: #FDF6F3;
+  border: 1px solid #F7CFC1;
+  border-bottom: none;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+.faq-accordion-item:first-child {
+  border-radius: 12px 12px 0 0;
+}
+.faq-accordion-item:last-child {
+  border-radius: 0 0 12px 12px;
+  border-bottom: 1px solid #F7CFC1;
+}
+.faq-accordion-title {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #391400;
+  padding: 28px 32px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 12px;
+}
+.faq-accordion-item.open .faq-accordion-title {
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+}
+.faq-title-text {
+  text-align: left;
+  flex: 1;
+}
+.faq-chevron {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+.faq-chevron svg {
+  display: block;
+}
+.faq-chevron.open svg {
+  transform: rotate(180deg);
+}
+.faq-accordion-content {
+  background: #fff;
+  color: #391400A3;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0 32px 28px 32px;
+  border-radius: 0 0 12px 12px;
+  border-top: 1px solid #F7CFC1;
+}
+
+@media (max-width: 600px) {
+  .faq-card {
+    padding: 16px 0 0 0;
+    max-width: 100%;
+  }
+  .faq-div {
+    padding: 0 10px;
+  }
+}
+
