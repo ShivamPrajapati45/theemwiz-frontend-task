@@ -73,7 +73,7 @@ const SecondSection = () => {
             <div className='video-box py-5 d-flex align-items-center justify-content-evenly w-100'>
                 <div className='position-relative'>
                     <img 
-                        src="/second_section/Bitmap (5).png" 
+                        src="/second_section/video.png" 
                         alt="video_bg"
                         className='z-0'
                     />

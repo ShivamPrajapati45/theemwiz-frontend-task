@@ -4,6 +4,7 @@ import '../styles/last_section.css'
 import Map from './Map'
 import Pricing from './Pricing'
 import FAQAccordion from './FAQAccordion'
+import Footer from './Footer'
 
 const LastSection = () => {
     return (
@@ -27,6 +28,7 @@ const LastSection = () => {
                         <FAQAccordion />
                 </div>
                 <Map/>
+                <Footer/>
             </div>
         </section>
     )
