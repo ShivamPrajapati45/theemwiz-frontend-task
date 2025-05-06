@@ -3,7 +3,9 @@
     display: flex;
     align-items: start;
     background-color: #28293E;
+    width: 100%;
 }
+
 .btn1{
     background-color: #EF6D58;
     padding: 10px 10px;
@@ -16,6 +18,10 @@
     width: 154px;
     height: 48px;
     cursor: pointer;
+}
+
+.h1-tag{
+    display: none;
 }
 
 .main-text div img{
@@ -35,13 +41,13 @@
     height: 100%;
 }
 
-
 .btn2{
     background-color: #28293E;
     color: white;
     border: none;
     outline: none;
     cursor: pointer;
+    box-shadow: none;
 }
 
 .help-box{
@@ -75,6 +81,63 @@
     width: 470px;
     height: 66px;
 }
+.help-box p br{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .help-box h1{
+        font-size: 56px;
+        font-weight: 800;
+        color: white;
+        line-height: 64px;
+        letter-spacing: -1px;
+    }
+    .help-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .help-box p{
+        text-align: left;
+    }
+    .help-box p br{
+        display: block;
+    }
+    .help-box h5{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #EF6D58;
+    }
+    .image-box{
+        width: 329px;
+        height: 334px;
+        /* margin-top: 178px; */
+    }
+    .star{
+        display: none;
+    }
+    .h1-tag{
+        display: block;
+    }
+    .h1{
+        display: none;
+    }
+    .bitmap-div{
+        position: absolute;
+        
+    }
+    .bitmap-div div p br{
+        display: block;
+    }
+}
+
+.bitmap-div div p br{
+    display: none;
+}
 
 .bitmap-div{
     top: 768px;
@@ -93,6 +156,7 @@
     letter-spacing: 0px;
     color: #FFFFFFA3;
 }
+
 .bitmap-div div span{
     font-weight: 400;
     font-size: 16px;

@@ -1,7 +1,11 @@
 #second-section {
     background-color: #FDF0E9;
     width: 100%;
-    
+}
+@media only screen and (max-width: 768px) {
+    #second-section {
+        width: 100%;
+    }
 }
 
 .logos {

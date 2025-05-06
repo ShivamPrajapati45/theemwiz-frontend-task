@@ -126,7 +126,6 @@ const ThirdSection = () => {
                 </button>
 
                 {/* contact div */}
-
                 <div className='d-flex justify-content-evenly px-5 contact align-items-center'>
 
                     <div className="contact-div1 position-relative d-flex align-items-start gap-2 flex-column">
@@ -160,7 +159,6 @@ const ThirdSection = () => {
                             src="/second_section/girl.png" 
                             alt="girl_img"
                             className='position-absolute girl_img z-3'
-
                         />
                     </div>
 
@@ -196,10 +194,10 @@ const ThirdSection = () => {
                             </button>
                         </div>
                     </div>
-                    <div className='d-flex mt-5 justify-content-evenly container align-items-center'> 
+                    <div className='d-flex mt-5 justify-content-evenly container align-items-center overflow-x-scroll'> 
                         {developers.map((developer, index) => {
                             return (
-                                <div className='d-flex  profile flex-column align-items-start' key={index}>
+                                <div className='d-flex profile flex-column align-items-start' key={index}>
                                     <div className='profile_box d-flex align-items-end justify-content-center'>
                                         <img 
                                             src={developer.image} 

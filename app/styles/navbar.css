@@ -1,10 +1,74 @@
 header{
     width: 100%;
     background-color: #28293E;
+    padding: 0 20px;
 }
 .logo{
     /* max-height: 40px; */
     width: 152px;
     height: 48px;
+}
 
+.menu-btn{
+    background-color: transparent;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #FFFFFF4B;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.mobile-menu{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background-color: #28293E;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 30px;
+}
+
+.mobile-menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.mobile-menu li {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu,
+    .menu-btn {
+    display: none !important;
+    }
+
+    nav {
+    justify-content: space-between !important;
+    }
+
+    .desktop-nav {
+    display: flex !important;
+    }
+
+    .contact-desktop {
+    display: block !important;
+    }
 }

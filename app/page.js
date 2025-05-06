@@ -6,12 +6,12 @@ import ThirdSection from "./components/ThirdSection";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-100">
       <Navbar/>
       <Hero/>
       <SecondSection/>
       <ThirdSection/>
       <LastSection/>
-    </>
+    </div>
   );
 }

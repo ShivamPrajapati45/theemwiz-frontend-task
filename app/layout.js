@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className='overflow-y-scroll scrollbar'>
+      <body className='overflow-y-scroll scrollbar w-100'>
         {children}
       </body>
     </html>
