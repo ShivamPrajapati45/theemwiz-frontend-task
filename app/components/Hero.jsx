@@ -4,7 +4,7 @@ import '../styles/hero.css'
 const Hero = () => {
     return (
         <section className="hero-section position-relative">
-            <div className="container flex-md-column-reverse main-box d-flex flex-column flex-md-row justify-content-evenly">
+            <div className="container gap-5 main-box d-flex flex-column flex-md-row justify-content-evenly">
                 
                 {/* Left Text Content */}
                 <div className="text-center  position-relative main-text help-box text-md-start mb-4 mb-md-0">
@@ -37,13 +37,14 @@ const Hero = () => {
                 </div>
 
                 {/* Right Image */}
-                {/* <div className='image-box'>
+                <div className='image-box'>
                     <img 
                         src="/hero/pic.png" 
                         alt="Hero Visual"
                     />
-                </div> */}
+                </div>
             </div>
+
             <div className='d-flex w-100 position-absolute bitmap-div align-items-start justify-content-center gap-3'>
                 <img 
                     src="/hero/Bitmap.png"     

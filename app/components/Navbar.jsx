@@ -3,13 +3,11 @@ import '../styles/navbar.css'
 import React, { useState } from 'react'
 
 const Navbar = () => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(true);
-    // const [MenuOpen, setMenuOpen] = useState(false);
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="py-3  position-fixed z-2 top-0">
-            <nav className={`${ isMobileMenuOpen ? 'justify-content-between' : 'justify-content-around'} container d-flex  align-items-center`}>
+        <header className="py-3 position-fixed z-2 top-0">
+            <nav className={` container d-flex justify-content-between  align-items-center`}>
                 {/* Logo */}
                 <div>
                     <img 
@@ -34,23 +32,6 @@ const Navbar = () => {
                     <button className="btn px-4 btn-outline-light text-uppercase fw-bold">Contact</button>
                 </div>
 
-                {/* mobile menu */}
-                {/* {isMenuOpen && (
-                    <>
-                        <button onClick={() => setMenuOpen((e) => !e)} className='menu-btn'>
-                            <img src="/hero/menu.png" alt="menu" />
-                        </button>
-                        <div className={`${MenuOpen ? 'd-block' : 'd-none'} mobile-menu`}>
-                        <ul>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Pricing</li>
-                            <li>Blog</li>
-                        </ul>
-                            <button className='btn mt-4 text-center w-100 px-4 btn-outline-light text-uppercase fw-bold'>Contact</button>
-                        </div>
-                    </>
-                )} */}
                 <button onClick={() => setMobileMenuOpen(prev => !prev)} className='menu-btn d-md-none'>
                     <img src="/hero/menu.png" alt="menu" />
                 </button>

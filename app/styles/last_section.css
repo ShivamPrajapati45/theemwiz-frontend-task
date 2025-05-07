@@ -2,6 +2,94 @@
     background-color: #FDF0E9;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px){
+
+    .last-section .first-div{
+        padding: 0rem 2rem;
+    }
+
+    .last-section .first-div h2{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0px;
+        color: #391400;
+    }
+
+    .last-section .pricing-section{
+        padding: 5rem 2rem;
+    }
+
+    .last-section .pricing-section .price-third{
+        border-top: none;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+    .last-section .pricing-section .price-first{
+        border-top-right-radius: 10px;
+    }
+
+    .last-section .pricing-section .popular-price .popular-btn{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .last-section .pricing-section .popular-price{
+        border: 1px solid #F3D1BF;
+    }
+
+    .last-section .faq-box{
+        flex-direction: column;
+    }
+
+    .last-section .faq-box .faq-accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .last-section .faq-box .faq-accordion .faq-accordion-title {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        flex-direction: row;
+    }
+
+    .last-section .faq-box .faq-accordion .faq-title-text {
+        flex: 1;
+        text-align: left;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .last-section .faq-box .faq-accordion .faq-accordion-item {
+        padding: 25px 0px;
+    }
+
+    .last-section .faq-box .faq-accordion .faq-chevron svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .last-section .faq-box .faq-accordion .faq-accordion-content {
+        padding: 1rem 2rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .last-section .faq-box .faq-div{
+        padding: 0px 15px;
+    }
+
+    .last-section .map{
+        background-image: none;
+    }
+
+    .mobile-map{
+        display: block;
+    }
+
+
+}
+
 .first-div{
     padding: 0rem 5rem;
 }
@@ -24,24 +112,55 @@
 }
 
 
+
 /* map part */
+
+.mobile-map{
+    display: none;
+    width: 100%;
+    padding: 0rem 3rem;
+}
+
+.mobile-map .form-div-mobile{
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    width: 330px;
+}
+
+.form-div-mobile{
+    padding: 3rem 1rem 3rem 1rem;
+}
+
+.mobile-map .form-div-mobile h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #391400;
+}
+
+.mobile-map .map-icon-mobile{
+    background-color: #EF6D58;
+    height: 72px;
+    width: 72px;
+    box-shadow: none;
+}
 .map {
     background-image: url('/second_section/map.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     height: 720px;
+    padding-top: 120px;
 }
 
 .map .form-div {
     background-color: #FFFFFF;
     width: 470px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 1px solid #FFD6A0;
-}
-
-.form-div{
     margin-left: 135px;
+    padding: 3rem 3rem 6rem 2rem;
 }
 
 .form-div h4 {
@@ -64,9 +183,11 @@
     line-height: 32px;
     color: #391400A3;
 }
+
 option{
     width: 300px;
 }
+
 .custom-textarea{
     max-height: 100px;
 }
@@ -85,23 +206,22 @@ option{
     text-align: center;
     color: white;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 6px;
     float: right;
+    box-shadow: none;
 }
 
 .submit-btn:hover {
     background-color: #e55d2c;
 }
 
-.map-icon{
-    left: 934px;
-}
-
 .map .map-icon{
     height: 72px;
     width: 72px;
     background-color: #EF6D58;
-    border-radius: 100%     ;
+    border-radius: 100%;
+    left: 934px;
+    bottom: 330px;
 }
 
 /* pricing */
@@ -222,8 +342,9 @@ h3{
     background-color: white;
     color: #391400;
     margin-top: 20px;
-    
+    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
 }
+
 .first-contact-popular{
     font-weight: 900;
     font-size: 14px;
@@ -232,6 +353,7 @@ h3{
     background-color: #EF6D58;
     color: #ffffff;
     margin-top: 20px;
+    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
 }
 
 /* faq */
@@ -297,8 +419,11 @@ h3{
 
 .faq-accordion-item {
     border: 1px solid #F7CFC1;
-    border-bottom: none;
     transition: background 0.2s;
+}
+
+.faq-accordion-item.open .faq-accordion-title {
+    background-color: #ffffff; /* White background when open */
 }
 
 .faq-accordion-title {
@@ -346,14 +471,5 @@ h3{
     padding: 0 32px 28px 32px;
 }
 
-@media (max-width: 600px) {
-    .faq-card {
-        padding: 16px 0 0 0;
-        max-width: 100%;
-    }
-    .faq-div {
-        padding: 0 10px;
-    }
-}
 
 

@@ -57,11 +57,12 @@ const ThirdSection = () => {
     return (
         <section className='third-section'>
             <div className='third-section-content gap-5 d-flex flex-column align-items-center justify-content-center'>
-                <div className='d-flex flex-column gap-1 align-items-center'>
+
+                <div className='d-flex first-div flex-column gap-1 align-items-md-center'>
                     <h5>Portfolio</h5>
-                    <h2>Latest Work</h2>
+                    <h2 className='heading-text'>Latest Work</h2>
                 </div>
-                <div className='d-flex align-items-center gap-5'>
+                <div className='d-flex list align-items-center gap-5'>
                     {category.map((category, index) => {
                         return (
                             <span className={`${category.active ? 'active-category' : 'category'}`} key={index}>
@@ -71,10 +72,20 @@ const ThirdSection = () => {
                         )
                     })}
                 </div>
+
+                {/* mobile selecter menu */}
+                <div class="custom-select-wrapper d-md-none">
+                    <select class="form-select custom-select">
+                        <option selected>Show All</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
                 
                 <div className='d-flex flex-column gap-4'>
                     {/* first two img */}
-                    <div className='d-flex gap-4'>
+                    <div className='d-flex first-two-img gap-4'>
                         <div className='position-relative'>
                             <img 
                                 src="/second_section/sofa.png" 
@@ -98,7 +109,7 @@ const ThirdSection = () => {
                     </div>
 
                     {/* second two img */}
-                    <div className='d-flex gap-4'>
+                    <div className='d-flex second-two-img gap-4'>
                         <div className='position-relative'>
                             <img 
                                 src="/second_section/work_india.png" 
@@ -121,12 +132,12 @@ const ThirdSection = () => {
                         </div>
                     </div>
                 </div>
-                <button>
+                <button className='explore-btn'>
                     explore more
                 </button>
 
                 {/* contact div */}
-                <div className='d-flex justify-content-evenly px-5 contact align-items-center'>
+                <div className='d-flex justify-content-md-evenly px-5 contact align-items-md-center'>
 
                     <div className="contact-div1 position-relative d-flex align-items-start gap-2 flex-column">
                         <img 
@@ -141,7 +152,7 @@ const ThirdSection = () => {
                         </button>
                     </div>
 
-                    <div className="d-flex">
+                    <div className="d-flex contact-div2">
                         <img 
                             src="/second_section/block.png" 
                             alt="block"
@@ -168,16 +179,18 @@ const ThirdSection = () => {
                 <div className='d-flex gap-4 flex-column container py-3'>
 
                     <div className='d-flex container justify-content-around developer align-items-end'>
-                        <div className='text-start d-flex align-items-start flex-column'>
+                        <div className='w-100 d-flex align-items-start flex-column'>
                             <h5>Our Team</h5>
-                            <h2>
-                                Team of Designers 
-                            </h2>
-                            <h2>
+                            <h2 className='text-start w-100 fw-bold'>
+                                Team of
+                                <br className='d-block d-md-none' /> {/* visible only on mobile */}
+                                Designers
+                                <br className='d-none d-md-block' /> {/* visible only on tablet & above */}
                                 and Developers
+                                
                             </h2>
                         </div>
-                        <div className='d-flex align-items-center gap-3'>
+                        <div className='d-none d-lg-flex align-items-center gap-3'>
                             <button className='left btn'>
                                 <img 
                                     src="/second_section/left.png"

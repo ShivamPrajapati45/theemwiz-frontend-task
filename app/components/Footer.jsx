@@ -3,15 +3,15 @@ import '../styles/footer.css'
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer className="footer mt-5">
             <div className="footer-top">
                 <div className="footer-brand">
-                    <h2>Agency</h2>
+                    <h4>Agency</h4>
                 </div>
                 <div className="footer-menus">
                     <div className="footer-menu">
-                        <h4>Menu</h4>
-                        <ul>
+                        <h5>Menu</h5>
+                        <ul className=''>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Blog</a></li>
@@ -19,7 +19,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-service">
-                        <h4>Service</h4>
+                        <h5>Service</h5>
                         <ul>
                             <li><a href="#">Design</a></li>
                             <li><a href="#">Development</a></li>
@@ -29,14 +29,23 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-social">
-                    <a href="#" aria-label="Facebook" className="footer-icon"><span className="icon-facebook" /></a>
-                    <a href="#" aria-label="Twitter" className="footer-icon"><span className="icon-twitter" /></a>
-                    <a href="#" aria-label="Instagram" className="footer-icon"><span className="icon-instagram" /></a>
+                    <button className='footer-icon'>
+                        <img src="/second_section/facebook.png" className='facebook' alt="facebook" />
+                    </button>
+                    <button className='footer-icon'>
+                        <img src="/second_section/twitter.png" alt="twitter" className='twitter' />
+                    </button>
+                    <button className='footer-icon'>
+                        <img src="/second_section/instagram.png" alt="instagram" className='instagram' />
+                    </button>
                 </div>
             </div>
-            <div className="footer-bottom">
-                <div className="footer-copyright">
-                    Copyright © 2022 Laaqiq. All Rights Reserved.
+            <hr className='hr-footer mt-5' />
+            <div className="footer-bottom ">
+                <div className="footer-copyright text-center">
+                    Copyright © 2022 Laaqiq. <br className='d-block d-md-none'/>
+                    
+                    All Rights Reserved.
                 </div>
                 <div className="footer-links">
                     <a href="#">Terms of Use</a>

@@ -1,3 +1,106 @@
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .first-div .heading-text{
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .first-two-img{
+        flex-direction: column;
+    }
+
+    .first-two-img img{
+        width: 100%;
+        height: 329px;
+    }
+
+    .second-two-img{
+        flex-direction: column;
+    }
+
+    .second-two-img img{
+        width: 100%;
+        height: 329px;
+    }
+    
+
+    .list{
+        display: none !important;
+    }
+
+    .custom-select-wrapper {
+        width: 100%;
+        margin-top: -20px;
+    }
+    
+    .custom-select {
+        background-color: white;
+        color: #9c8d86; /* Text color similar to screenshot */
+        border: none;
+        border-radius: 5px;
+        padding: 12px 16px;
+        font-weight: 500;
+        appearance: none; /* Remove default arrow */
+        background-image: url("/second_section/Triangle.png");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 12px;
+    }
+    
+    .custom-select:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .contact{
+        flex-direction: column;
+        width: 100%;
+        height: 832px;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2.5rem;
+        padding: 2rem 0rem;
+        margin-top: 5rem;
+    }
+
+    .contact .contact-div1{
+        margin-top: 3rem;
+    }
+
+    .contact .contact-div1 button{
+        margin-top: 1rem;
+    }
+
+    
+
+    .contact .contact-div2{
+        margin-top: -4rem;
+    }
+
+    .contact .contact-div2 img{
+        height: 232px;
+        width: 351px;
+    }
+
+    .contact .contact-div3 .girl_img{
+        height: 317px;
+        width: 190px;
+    }
+
+    .contact .contact-div3 .path_img{
+        height: 194px;
+        width: 226px;
+    }
+
+
+}
+
+.explore-btn{
+    box-shadow: none;
+}
+
 .third-section {
     width: 100%;
     background-color: #28293E;
@@ -103,9 +206,6 @@
 .contact{
     background-color: #FDF0E9;
     border-radius: 10px;
-    width: 1170px;
-    height: 336px;
-    min-width: 1170px;
 }
 
 .contact .contact-div1 h5{
@@ -136,6 +236,8 @@
     text-align: center;
     padding: 5px 10px;
     background-color: #EF6D58;
+    box-shadow: none;
+    border: none;
 }
 
 .contact-div1 .star-icon{

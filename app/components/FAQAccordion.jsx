@@ -30,7 +30,6 @@ const FAQAccordion = () => {
     };
 
     return (
-
                 <div className="faq-accordion">
                 {faqData.map((item, idx) => (
                     <div className={`faq-accordion-item ${openIndex === idx ? ' open' : ''}`} key={idx}>
