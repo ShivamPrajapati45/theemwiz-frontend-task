@@ -31,7 +31,7 @@ const SecondSection = () => {
             </div>
 
             {/* agency & projects */}
-            <div className='row record w-100'>
+            <div className='row align-items-md-center justify-content-md-center record w-100'>
                 <div className="">
                     <h3>42%</h3>
                     <span className='text'>Years of experience</span>

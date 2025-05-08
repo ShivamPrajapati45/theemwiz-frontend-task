@@ -3,7 +3,7 @@ import '../styles/last_section.css'
 
 const Map = () => {
     return (
-        <div className='w-100 d-sm-none d-md-block d-none map position-relative d-flex justify-content-between'>
+        <div className='w-100 d-none d-md-block map position-relative d-flex justify-content-between'>
             <div className='form-div'>
                 <h4 className='mb-4'>Get In Touch</h4>
                 <form>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const MobileMap = () => {
     return (
-        <div className='mobile-map d-flex gap-5 overflow-hidden flex-column align-items-center'>
+        <div className='mobile-map d-flex d-md-none gap-5 overflow-hidden flex-column align-items-center'>
             <div className='form-div-mobile'>
                 <h4 className='mb-4'>Get In Touch</h4>
                 <form>

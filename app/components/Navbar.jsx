@@ -6,8 +6,8 @@ const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="py-3 position-fixed z-2 top-0">
-            <nav className={`container d-flex justify-content-md-around align-items-center`}>
+        <header className="py-3 position-fixed z-3 top-0">
+            <nav className={`container  d-flex justify-content-md-around align-items-center`}>
                 {/* Logo */}
                 <div>
                     <img 

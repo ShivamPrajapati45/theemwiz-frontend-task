@@ -77,9 +77,10 @@ const ThirdSection = () => {
                 <div class="custom-select-wrapper d-md-none">
                     <select class="form-select custom-select">
                         <option selected>Show All</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
+                        <option value="1">Design</option>
+                        <option value="2">Branding</option>
+                        <option value="3">Illustration</option>
+                        <option value="3">Motion</option>
                     </select>
                 </div>
                 
@@ -169,7 +170,7 @@ const ThirdSection = () => {
                         <img 
                             src="/second_section/girl.png" 
                             alt="girl_img"
-                            className='position-absolute girl_img z-3'
+                            className='position-absolute girl_img z-2'
                         />
                     </div>
 
