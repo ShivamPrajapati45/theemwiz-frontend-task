@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <header className="py-3 position-fixed z-2 top-0">
-            <nav className={` container d-flex justify-content-between  align-items-center`}>
+            <nav className={`container d-flex justify-content-md-around align-items-center`}>
                 {/* Logo */}
                 <div>
                     <img 

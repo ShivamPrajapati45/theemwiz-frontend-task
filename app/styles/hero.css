@@ -1,9 +1,79 @@
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .hero-section .main-box{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .hero-section .left-box{
+        justify-content: first baseline;
+        margin-top: -10rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero-section .main-box .left-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 17rem;
+    }
+
+    .hero-section .help-box{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .mobile-bitmap-text{
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFFA3;
+        text-transform: none;
+    }
+
+
+    .meta{
+        text-transform: none;
+    }
+
+    .hero-section .help-box h2{
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 64px;
+        letter-spacing: -1px;
+    }
+
+    .hero-section .help-box .h1-tag{
+        display: block;
+    }
+
+    .hero-section .help-box .h1{
+        display: none;
+    }
+
+    .star{
+        display: none;
+    }
+
+    .hero-section .image-box{
+        height: 334px;
+        width: 330px;
+        margin-top: 90px;
+    }
+}
+
 .hero-section {
     min-height: 880px;
     display: flex;
     align-items: start;
     background-color: #28293E;
     width: 100%;
+}
+
+.hero-section .left-box{
+    gap: 20rem;
 }
 
 .btn1{
@@ -56,13 +126,14 @@
     margin-top: 188px;
 }
 
-.help-box h1{
+.help-box h2{
     font-size: 72px;
     font-weight: 800;
     color: white;
     line-height: 80px;
     letter-spacing: -2px;
 }
+
 .help-box h5{
     font-weight: 400;
     font-size: 16px;
@@ -85,82 +156,24 @@
     display: none;
 }
 
-@media screen and (max-width: 375px) {
-    .help-box h1{
-        font-size: 56px;
-        font-weight: 800;
-        color: white;
-        line-height: 64px;
-        letter-spacing: -1px;
-    }
-    .help-box{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .help-box p{
-        text-align: left;
-    }
-    .help-box p br{
-        display: block;
-    }
-    .help-box h5{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 32px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        color: #EF6D58;
-    }
-    .image-box{
-        width: 329px;
-        height: 334px;
-        /* margin-top: 178px; */
-    }
-    .star{
-        display: none;
-    }
-    .h1-tag{
-        display: block;
-    }
-    .h1{
-        display: none;
-    }
-    .bitmap-div{
-        position: absolute;
-        
-    }
-    .bitmap-div div p br{
-        display: block;
-    }
-}
-
-.bitmap-div div p br{
-    display: none;
-}
-
-.bitmap-div{
-    top: 768px;
-    left: 135px;
-}
-
 .bitmap-div img{
     width: 48px;
     height: 48px;
 }
 
-.bitmap-div div p{
+.bitmap-div div .bitmap-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 12px;
     letter-spacing: 0px;
     color: #FFFFFFA3;
+    text-transform: none;
 }
 
-.bitmap-div div span{
+.bitmap-div div .meta{
     font-weight: 400;
     font-size: 16px;
-    line-height: 12px;
+    line-height: 32px;
     letter-spacing: 0px;
     color: #FFFFFF;
 }

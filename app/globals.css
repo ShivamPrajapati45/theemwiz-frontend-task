@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Epilogue', sans-serif;
+}
+
 .scrollbar::-webkit-scrollbar{
   display: none;
 }
+
